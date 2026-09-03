@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use BenchLog, please cite this software."
+title: "BenchLog"
+type: software
+version: 0.1.0
+date-released: 2026-09-03
+authors:
+  - family-names: "Barker"
+    given-names: "Will"
+license: MIT
+repository-code: "https://github.com/williamtbarker/benchlog"
+url: "https://github.com/williamtbarker/benchlog"
+abstract: >-
+  A local Python experiment tracker with atomic manifests, metric comparison,
+  artifact hashing, and Git provenance.
+keywords:
+  - experiment tracking
+  - reproducibility
+  - machine learning
+  - provenance
