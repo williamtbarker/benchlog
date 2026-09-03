@@ -1,0 +1,9 @@
+include CHANGELOG.md
+include CONTRIBUTING.md
+include LICENSE
+include MACBOOK_SETUP.md
+include README.md
+include SECURITY.md
+recursive-include examples *.json *.py
+recursive-include scripts *.sh
+recursive-include tests *.py

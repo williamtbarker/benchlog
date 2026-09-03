@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "benchlog"
+version = "0.1.0"
+description = "Local, inspectable experiment tracking for command-line workflows"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "William T. Barker" }]
+keywords = ["experiment-tracking", "reproducibility", "machine-learning", "provenance", "cli"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Operating System :: MacOS",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Testing",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["build>=1.2", "mypy>=1.11", "ruff>=0.6", "setuptools>=77", "wheel>=0.43"]
+
+[project.scripts]
+benchlog = "benchlog.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/williamtbarker/benchlog"
+Repository = "https://github.com/williamtbarker/benchlog"
+Issues = "https://github.com/williamtbarker/benchlog/issues"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+benchlog = ["py.typed"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["B", "E", "F", "I", "SIM", "UP"]
+
+[tool.mypy]
+python_version = "3.10"
+mypy_path = "src"
+strict = true
+files = ["src/benchlog"]
+exclude = "(^build/|^dist/|^\\.venv/)"

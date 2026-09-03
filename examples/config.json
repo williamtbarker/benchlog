@@ -1,0 +1,6 @@
+{
+  "epochs": 5,
+  "learning_rate": 0.03,
+  "model": "tiny-demo",
+  "seed": 42
+}
