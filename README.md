@@ -1,5 +1,8 @@
 # BenchLog
 
+[![License](https://img.shields.io/github/license/williamtbarker/benchlog)](https://github.com/williamtbarker/benchlog/blob/main/LICENSE)
+[![Release](https://img.shields.io/github/v/release/williamtbarker/benchlog?display_name=tag&sort=semver)](https://github.com/williamtbarker/benchlog/releases)
+
 [![CI](https://github.com/williamtbarker/benchlog/actions/workflows/ci.yml/badge.svg)](https://github.com/williamtbarker/benchlog/actions/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/python-3.10%2B-3776ab.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
