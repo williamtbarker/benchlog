@@ -27,7 +27,7 @@ classifiers = [
 dependencies = []
 
 [project.optional-dependencies]
-dev = ["build>=1.2", "mypy>=1.11", "ruff>=0.16.5", "setuptools>=77", "wheel>=0.43"]
+dev = ["build>=1.2", "mypy>=2.3.1", "ruff>=0.16.5", "setuptools>=77", "wheel>=0.43"]
 
 [project.scripts]
 benchlog = "benchlog.cli:main"
